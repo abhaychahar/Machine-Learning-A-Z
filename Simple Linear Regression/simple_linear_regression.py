@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 dataset=pd.read_csv('Salary_Data.csv')
 
 # feature matrix and dependent variable vector
-x=dataset.iloc[:,:-1].values
-y=dataset.iloc[:,-1].values
+x=dataset.iloc[:, :-1].values
+y=dataset.iloc[:, -1].values
 
 # splitting data into training set and test set
 from sklearn.model_selection import train_test_split
